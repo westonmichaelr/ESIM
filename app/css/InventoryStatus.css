@@ -1,0 +1,628 @@
+/*
+Css for InventoryStatus Page
+*/
+body {
+  background-color: #87999b;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 1% 0 2% 0;
+  text-align: center;
+  font-size: 60px;
+}
+
+/* Navigation bar at top */
+.topnav {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 15%;
+  border-bottom: 2px solid black;
+  background-color: #72D2D2;
+}
+
+.checkedin {
+  position: fixed;
+  top: 11%;
+  left: 4%;
+  font-size: 40px;
+}
+
+.checkedout {
+  position: fixed;
+  top: 51%;
+  left: 4%;
+  font-size: 40px;
+}
+
+.underline1 {
+  position: fixed;
+  top: 11%;
+  left: 2%;
+  font-size: 40px;
+}
+
+.underline2 {
+  position: fixed;
+  top: 51%;
+  left: 2%;
+  font-size: 40px;
+}
+
+.chin {
+  position: absolute;
+  top: 16%;
+  left: 1%;
+  width: 500px;
+  height: 35%;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: #c6be7f;
+}
+
+.chout {
+  position: absolute;
+  top: 56%;
+  left: 1%;
+  width: 500px;
+  height: 35%;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: #c6be7f;
+}
+
+.user {
+  position: fixed;
+  top: 10%;
+  right: 15%;
+  margin: 0;
+  font-size: 20px;
+}
+
+.user_logged_in {
+  position: fixed;
+  top: 10%;
+  right: 4%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+/* ESIM Logo */
+.ESIM_logo {
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  margin: 0;
+  width: 110px;
+  height: 8%;
+  border: 2px solid black;
+  background-color: red;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Logout button */
+.Logout {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  font-size: 40px;
+}
+
+/*Go to Check-in Page*/
+.button1 {
+  position: fixed;
+  top: 60%;
+  right: 5%;
+  margin: 0px;
+  padding: 15px 25px;
+  width: 35%;
+  height: 30%;
+  border: 2px solid black;
+  background-color: lightgray;
+  text-align: center;
+  font-size: 35px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.button1:hover {
+  background-color: #3BCE49;
+}
+
+/*Go to Check-Out Page*/
+.button_check_out {
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  margin: 0px;
+  padding: 15px 25px;
+  width: 35%;
+  height: 30%;
+  border: 2px solid black;
+  background-color: lightgray;
+  text-align: center;
+  font-size: 35px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.button_check_out:hover {
+  background-color: #FB2E45;
+}
+
+/* Return to Home Page Button*/
+.button2 {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  margin: 0;
+  width: 110px;
+  height: 11%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+/* Items_Checked_In Css Formatting */
+/* Retrieved from https://medium.com/@vembarrajan/html-css-tricks-scroll-able-table-body-tbody-d23182ae0fbc */
+.fixed_header {
+  position: fixed;
+  top: 24%;
+  left: 4%;
+  width: 400px;
+  table-layout: fixed;
+  font-size: 15px;
+}
+
+.fixed_header tbody {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: 125px;
+  background: white;
+}
+
+.fixed_header thead tr {
+  display: block;
+}
+
+.fixed_header thead {
+  background: black;
+  color: #fff;
+}
+
+.fixed_header th, .fixed_header td {
+  padding: 5px;
+  width: 200px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+/* Items_Checked_Out Css Formatting */
+/* Retrieved from https://medium.com/@vembarrajan/html-css-tricks-scroll-able-table-body-tbody-d23182ae0fbc */
+.fixed_header2 {
+  position: fixed;
+  top: 64%;
+  left: 4%;
+  width: 400px;
+  table-layout: fixed;
+  font-size: 15px;
+}
+
+.fixed_header2 tbody {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: 125px;
+  background: white;
+}
+
+.fixed_header2 thead tr {
+  display: block;
+}
+
+.fixed_header2 thead {
+  background: black;
+  color: #fff;
+}
+
+.fixed_header2 th, .fixed_header2 td {
+  padding: 5px;
+  width: 200px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+/* Media Queries */
+#rwd {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: red;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+  #rwd {
+    background-color: orange;
+  }
+
+  .checkedin {
+    position: fixed;
+    top: 14%;
+    left: 4%;
+    font-size: 25px;
+  }
+
+  .checkedout {
+    position: fixed;
+    top: 44%;
+    left: 4%;
+    font-size: 25px;
+  }
+
+  .underline1 {
+    position: fixed;
+    top: 16%;
+    left: 3%;
+    font-size: 25px;
+  }
+
+  .underline2 {
+    position: fixed;
+    top: 46%;
+    left: 3%;
+    font-size: 25px;
+  }
+
+  .chin {
+    position: absolute;
+    top: 16%;
+    left: 1%;
+    width: 320px;
+    height: 28%;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: #c6be7f;
+  }
+
+  .chout {
+    position: absolute;
+    top: 46%;
+    left: 1%;
+    width: 320px;
+    height: 28%;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: #c6be7f;
+  }
+
+  /* Items_Checked_In Css Formatting */
+  /* Retrieved from https://medium.com/@vembarrajan/html-css-tricks-scroll-able-table-body-tbody-d23182ae0fbc */
+  .fixed_header {
+    position: fixed;
+    top: 24%;
+    left: 2%;
+    width: 300px;
+    table-layout: fixed;
+    font-size: 20px;
+  }
+
+  .fixed_header tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 100px;
+    background: white;
+    font-size: 8px;
+  }
+
+  .fixed_header thead tr {
+    display: block;
+  }
+
+  .fixed_header thead {
+    width: 100%;
+    background: black;
+    color: #fff;
+  }
+
+  .fixed_header th, .fixed_header td {
+    padding: 5px;
+    width: 150%;
+    text-align: left;
+    font-size: 8px;
+  }
+
+  /* Items_Checked_Out Css Formatting */
+  /* Retrieved from https://medium.com/@vembarrajan/html-css-tricks-scroll-able-table-body-tbody-d23182ae0fbc */
+  .fixed_header2 {
+    position: fixed;
+    top: 54%;
+    left: 2%;
+    width: 300px;
+    table-layout: fixed;
+    font-size: 20px;
+  }
+
+  .fixed_header2 tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 100px;
+    background: white;
+    font-size: 8px;
+  }
+
+  .fixed_header2 thead tr {
+    display: block;
+  }
+
+  .fixed_header2 thead {
+    width: 100%;
+    background: black;
+    color: #fff;
+  }
+
+  .fixed_header2 th, .fixed_header2 td {
+    padding: 5px;
+    width: 150%;
+    text-align: left;
+    font-size: 8px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+
+  .or {
+    right: 28%;
+    bottom: 13%;
+    font-size: 12px;
+  }
+
+  /*Return to Check-in Page*/
+  .button1 {
+    top: 77%;
+    right: 5%;
+    width: 45%;
+    height: 13%;
+    font-size: 20px;
+  }
+
+  /*Return to Check-out Page*/
+  .button_check_out {
+    top: 77%;
+    left: 1%;
+    width: 45%;
+    height: 13%;
+    font-size: 20px;
+  }
+
+  /* Return to Home Page Button*/
+  .button2 {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    margin: 0;
+    width: 23%;
+    height: 8%;
+    font-size: 10px;
+  }
+
+  /* ESIM Logo */
+  .ESIM_logo {
+    right: 5%;
+    width: 20%;
+    height: 4%;
+    font-size: 25px;
+  }
+
+  /* Logged In */
+  .user {
+    right: 20%;
+    font-size: 10px;
+  }
+
+  /* User logged in */
+  .user_logged_in {
+    font-size: 10px;
+  }
+
+  /*Logout */
+  .Logout {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 976px) {
+  #rwd {
+    background-color: green;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .checkedin {
+    position: fixed;
+    top: 14%;
+    left: 4%;
+    font-size: 25px;
+  }
+
+  .checkedout {
+    position: fixed;
+    top: 44%;
+    left: 4%;
+    font-size: 25px;
+  }
+
+  .underline1 {
+    position: fixed;
+    top: 16%;
+    left: 3%;
+    font-size: 25px;
+  }
+
+  .underline2 {
+    position: fixed;
+    top: 46%;
+    left: 3%;
+    font-size: 25px;
+  }
+
+  .chin {
+    position: absolute;
+    top: 16%;
+    left: 1%;
+    width: 320px;
+    height: 28%;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: #c6be7f;
+  }
+
+  .chout {
+    position: absolute;
+    top: 46%;
+    left: 1%;
+    width: 320px;
+    height: 28%;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: #c6be7f;
+  }
+
+  /* Items_Checked_In Css Formatting */
+  /* Retrieved from https://medium.com/@vembarrajan/html-css-tricks-scroll-able-table-body-tbody-d23182ae0fbc */
+  .fixed_header {
+    position: fixed;
+    top: 24%;
+    left: 2%;
+    width: 300px;
+    table-layout: fixed;
+    font-size: 20px;
+  }
+
+  .fixed_header tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 100px;
+    background: white;
+  }
+
+  .fixed_header thead tr {
+    display: block;
+    font-size: 10px;
+  }
+
+  .fixed_header thead {
+    width: 100%;
+    background: black;
+    color: #fff;
+  }
+
+  .fixed_header th, .fixed_header td {
+    padding: 5px;
+    width: 150%;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  /* Items_Checked_Out Css Formatting */
+  /* Retrieved from https://medium.com/@vembarrajan/html-css-tricks-scroll-able-table-body-tbody-d23182ae0fbc */
+  .fixed_header2 {
+    position: fixed;
+    top: 54%;
+    left: 2%;
+    width: 300px;
+    table-layout: fixed;
+    font-size: 20px;
+  }
+
+  .fixed_header2 tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 100px;
+    background: white;
+  }
+
+  .fixed_header2 thead tr {
+    display: block;
+    font-size: 10px;
+  }
+
+  .fixed_header2 thead {
+    background: black;
+    color: #fff;
+  }
+
+  .fixed_header2 th, .fixed_header2 td {
+    padding: 5px;
+    width: 150%;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  /*Return to Check-in Page*/
+  .button1 {
+    top: 60%;
+    right: 15%;
+    width: 25%;
+    height: 20%;
+    font-size: 25px;
+  }
+
+  /*Return to Check-out Page*/
+  .button_check_out {
+    top: 30%;
+    right: 15%;
+    width: 25%;
+    height: 20%;
+    font-size: 25px;
+  }
+
+  /* Return to Home Page Button*/
+  .button2 {
+    width: 10%;
+    height: 8%;
+    font-size: 15px;
+  }
+
+  /* ESIM Logo */
+  .ESIM_logo {
+    width: 10%;
+    height: 4%;
+    font-size: 25px;
+  }
+
+  /* Logged In */
+  .user {
+    font-size: 10px;
+  }
+
+  /* User logged in */
+  .user_logged_in {
+    font-size: 10px;
+  }
+
+  /*Logout */
+  .Logout {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,292 @@
+/*
+This css is for the CheckIn_2 page
+*/
+body {
+  background-color: #87999b;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 1% 0 2% 0;
+  text-align: center;
+  font-size: 60px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Navigation bar at top */
+.topnav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 15%;
+  border-bottom: 2px solid black;
+  background-color: #3BCE49;
+}
+
+.user {
+  position: fixed;
+  top: 10%;
+  right: 15%;
+  margin: 0;
+  font-size: 20px;
+}
+
+.user_logged_in {
+  position: fixed;
+  top: 10%;
+  right: 4%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+/* ESIM Logo */
+.ESIM_logo {
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  margin: 0;
+  width: 10%;
+  height: 8%;
+  border: 2px solid black;
+  background-color: red;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Logout button */
+.Logout {
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+  font-size: 40px;
+}
+
+/* Items list */
+.items_list_div {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 75%;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: #c6be7f;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+/* Confirm Check Out Button*/
+.confirm_button {
+  position: fixed;
+  bottom: 8%;
+  left: 31%;
+  padding: 1% 3%;
+  width: 40%;
+  height: 10%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  white-space: nowrap;
+  font-size: 42px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+/* Return to Home Page Button*/
+.return_home {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  margin: 0;
+  width: 8%;
+  height: 11%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+/* Return to CheckOut_1 Button*/
+.go_back {
+  position: fixed;
+  top: 2%;
+  left: 12%;
+  margin: 0;
+  width: 8%;
+  height: 11%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+/* Media Queries */
+#rwd {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: red;
+}
+
+@media (min-width: 0px) and (max-width: 620px) {
+  #rwd {
+    background-color: orange;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  /* Employee */
+  p {
+    font-size: 20px;
+  }
+
+  /* Items list */
+  .items_list_div {
+    font-size: 20px;
+  }
+
+  /* Confirm check-in */
+  .confirm_button {
+    font-size: 10px;
+  }
+
+  /* Return to Home Page Button*/
+  .return_home {
+    top: 1%;
+    width: 16%;
+    height: 6%;
+    font-size: 12px;
+  }
+
+  /* Go back to CheckIn_1*/
+  .go_back {
+    top: 8%;
+    left: 2%;
+    width: 16%;
+    height: 6%;
+    font-size: 12px;
+  }
+
+  /* ESIM Logo */
+  .ESIM_logo {
+    right: 5%;
+    width: 20%;
+    height: 4%;
+    font-size: 25px;
+  }
+
+  /* Logged In */
+  .user {
+    right: 20%;
+    z-index: 1;
+    font-size: 10px;
+  }
+
+  /* User logged in */
+  .user_logged_in {
+    font-size: 10px;
+  }
+
+
+  /*Logout */
+  .Logout {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 1250px) {
+  #rwd {
+    background-color: green;
+  }
+
+  /* Check-In */
+  h1 {
+    font-size: 45px;
+  }
+
+  /* Check-out queue */
+  h2 {
+    font-size: 30px;
+  }
+
+  /* Employee */
+  p {
+    font-size: 20px;
+  }
+
+  /* Confirm check-in */
+  .confirm_button {
+    font-size: 20px;
+  }
+
+  /* Return to Home Page Button*/
+  .return_home {
+    width: 8%;
+    height: 10%;
+    font-size: 15px;
+  }
+
+  /* Go back to CheckIn_1*/
+  .go_back {
+    width: 10%;
+    height: 8%;
+    font-size: 15px;
+  }
+
+  /* Return to Home Page Button*/
+  .return_home {
+    width: 10%;
+    height: 8%;
+    font-size: 15px;
+  }
+
+  /* ESIM Logo */
+  .ESIM_logo {
+    width: 10%;
+    height: 4%;
+    font-size: 25px;
+  }
+
+  /* Logged In */
+  .user {
+    font-size: 10px;
+  }
+
+  /* User logged in */
+  .user_logged_in {
+    font-size: 10px;
+  }
+
+
+  /*Logout */
+  .Logout {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,332 @@
+/*
+Css for itemloyeeIDs Page
+*/
+body {
+  background-color: #87999b;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 1% 0 2% 0;
+  text-align: center;
+  font-size: 60px;
+}
+
+.update {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  margin-top: 150px;
+  padding-bottom: 50px;
+  width: 50%;
+  height: 65%;
+  border: 4px solid black;
+  border-radius: 25px;
+  background-color: #c6be7f;
+  text-align: center;
+  font-size: 26px;
+  line-height: .8;
+}
+
+.update_btn {
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  display: none;
+  margin-top: 300px;
+  width: 45%;
+  height: 12%;
+  border: 2px solid black;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.text_input {
+  width: 40%;
+  font-size: 25px;
+}
+
+.return_home2 {
+  margin-top: 5%;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* Navigation bar at top */
+.topnav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 15%;
+  border-bottom: 2px solid black;
+  background-color: #f49542;
+}
+
+/* User Information */
+.user {
+  position: fixed;
+  top: 10%;
+  right: 15%;
+  z-index: 1;
+  margin: 0;
+  font-size: 20px;
+}
+
+.user_logged_in {
+  position: fixed;
+  top: 10%;
+  right: 4%;
+  z-index: 1;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+/* ESIM Logo */
+.ESIM_logo {
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  z-index: 1;
+  margin: 0;
+  width: 110px;
+  height: 8%;
+  border: 2px solid black;
+  background-color: red;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Logout button */
+.Logout {
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+  font-size: 40px;
+}
+
+/* Item Table */
+.itemTable {
+  margin-top: 150px;
+  margin-right: auto;
+  margin-bottom: 10%;
+  margin-left: auto;
+  padding: 1%;
+  width: 50%;
+  border: 4px solid black;
+  border-radius: 25px;
+  background-color: #c6be7f;
+  font-size: 30px;
+}
+
+td {
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: #c6be7f;
+  font-size: 30px;
+}
+
+.itemTable, th {
+  font-size: 40px;
+}
+
+/* Return to Home Page Button*/
+.return_home {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  z-index: 1;
+  margin: 0;
+  width: 110px;
+  height: 11%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+/* Return to Update_Quantity Page Button*/
+.go_back {
+  position: fixed;
+  top: 2%;
+  left: 12%;
+  margin: 0;
+  width: 8%;
+  height: 11%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+#rwd {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: red;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+  #rwd {
+    background-color: orange;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  /* Return to Home Page Button*/
+  .return_home {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    margin: 0;
+    width: 24%;
+    height: 6%;
+    font-size: 10px;
+  }
+
+  .update {
+    font-size: 18px;
+  }
+
+  .update_btn {
+    left: 5%;
+    width: 90%;
+    word-wrap: normal;
+    font-size: 20px;
+  }
+
+  /* Return to Update Quantity Page Button*/
+  .go_back {
+    top: 8%;
+    left: 2%;
+    width: 24%;
+    height: 6%;
+    font-size: 10px;
+  }
+
+  .return_home2 {
+    width: 80%;
+    font-size: 22px;
+  }
+
+  /* ESIM Logo */
+  .ESIM_logo {
+    right: 5%;
+    width: 20%;
+    height: 4%;
+    font-size: 25px;
+  }
+
+  /* Logged In */
+  .user {
+    right: 20%;
+    font-size: 10px;
+  }
+
+  /* User logged in */
+  .user_logged_in {
+    font-size: 10px;
+  }
+
+  /*Logout */
+  .Logout {
+    font-size: 30px;
+  }
+
+  /* item Table */
+  .itemTable, td {
+    font-size: 10px;
+  }
+
+  .itemTable, th {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 976px) {
+  #rwd {
+    background-color: green;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  /* Return to Home Page Button*/
+  .return_home {
+    top: 2%;
+    left: 2%;
+    width: 28%;
+    height: 6%;
+    font-size: 10px;
+  }
+
+  /* Return to Update Quantities Button*/
+  .go_back {
+    top: 8%;
+    left: 2%;
+    width: 28%;
+    height: 6%;
+    font-size: 10px;
+  }
+
+  /* ESIM Logo */
+  .ESIM_logo {
+    width: 10%;
+    height: 4%;
+    font-size: 25px;
+  }
+
+  /* Logged In */
+  .user {
+    font-size: 10px;
+  }
+
+  /* User logged in */
+  .user_logged_in {
+    font-size: 10px;
+  }
+
+  .update_btn {
+    white-space: normal;
+    eft: 3%;
+  }
+
+  /*Logout */
+  .Logout {
+    font-size: 30px;
+  }
+
+  /* itemloyee Table */
+  .itemTable, td {
+    font-size: 25px;
+  }
+
+  .itemTable, th {
+    font-size: 35px;
+  }
+}

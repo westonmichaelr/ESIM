@@ -1,0 +1,296 @@
+/*
+Css for EmployeeIDs Page
+*/
+body {
+  background-color: #87999b;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Search bar */
+.employee_search {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  padding: 12px 20px 12px 50px;
+  width: 34%;
+  outline: 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-image: url('http://i47.tinypic.com/r02vbq.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  font-size: 26px;
+}
+
+/* Register and Delete employee buttons*/
+.buttonR {
+  position: fixed;
+  top: 18%;
+  left: 4%;
+  margin: 0;
+  width: 15%;
+  height: 8%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  text-align: center;
+  font-size: 90%;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.buttonD {
+  position: fixed;
+  top: 18%;
+  right: 4%;
+  margin: 0;
+  width: 15%;
+  height: 8%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  text-align: center;
+  font-size: 90%;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 1% 0 2% 0;
+  text-align: center;
+  font-size: 60px;
+}
+
+/* Navigation bar at top */
+.topnav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 15%;
+  border-bottom: 2px solid black;
+  background-color: #7839de;
+}
+
+/* User Information */
+.user {
+  position: fixed;
+  top: 10%;
+  right: 15%;
+  z-index: 1;
+  margin: 0;
+  font-size: 20px;
+}
+
+.user_logged_in {
+  position: fixed;
+  top: 10%;
+  right: 4%;
+  z-index: 1;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+/* ESIM Logo */
+.ESIM_logo {
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  z-index: 1;
+  margin: 0;
+  width: 110px;
+  height: 8%;
+  border: 2px solid black;
+  background-color: red;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Logout button */
+.Logout {
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+  font-size: 40px;
+}
+
+/* Employee Table */
+.empTable {
+  margin-top: 200px;
+  margin-right: auto;
+  margin-bottom: 10%;
+  margin-left: auto;
+  padding: 1%;
+  width: 50%;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: #c6be7f;
+  font-size: 30px;
+}
+
+td {
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: #c6be7f;
+  font-size: 30px;
+}
+
+.empTable, th {
+  font-size: 40px;
+}
+
+/* Return to Home Page Button*/
+.return_home {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  z-index: 1;
+  margin: 0;
+  width: 110px;
+  height: 11%;
+  border: 2px solid black;
+  background-color: #cacfd2;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+#rwd {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: red;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+  #rwd {
+    background-color: orange;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  /* Return to Home Page Button*/
+  .return_home {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    margin: 0;
+    width: 23%;
+    height: 8%;
+    font-size: 10px;
+  }
+
+  .employee_search {
+    width: 20%;
+    font-size: 12px;
+  }
+
+  /* ESIM Logo */
+  .ESIM_logo {
+    right: 5%;
+    width: 20%;
+    height: 4%;
+    font-size: 25px;
+  }
+
+  /* Logged In */
+  .user {
+    right: 20%;
+    z-index: 1;
+    font-size: 10px;
+  }
+
+  /* User logged in */
+  .user_logged_in {
+    font-size: 10px;
+  }
+
+  /* Register and Delete employee buttons*/
+  .buttonR {
+    top: 18%;
+    left: 1%;
+    width: 20%;
+    height: 8%;
+    font-size: 70%;
+  }
+
+  .buttonD {
+    top: 18%;
+    right: 1%;
+    width: 20%;
+    height: 8%;
+    font-size: 70%;
+  }
+
+  /*Logout */
+  .Logout {
+    font-size: 30px;
+  }
+
+  /* Employee Table */
+  .empTable, td {
+    font-size: 10px;
+  }
+
+  .empTable, th {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 976px) {
+  #rwd {
+    background-color: green;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  /* Return to Home Page Button*/
+  .return_home {
+    width: 10%;
+    height: 8%;
+    font-size: 15px;
+  }
+
+  /* ESIM Logo */
+  .ESIM_logo {
+    width: 10%;
+    height: 4%;
+    font-size: 25px;
+  }
+
+  /* Logged In */
+  .user {
+    font-size: 10px;
+  }
+
+  /* User logged in */
+  .user_logged_in {
+    font-size: 10px;
+  }
+
+  /*Logout */
+  .Logout {
+    font-size: 30px;
+  }
+
+  /* Employee Table */
+  .empTable, td {
+    font-size: 25px;
+  }
+
+  .empTable, th {
+    font-size: 35px;
+  }
+}

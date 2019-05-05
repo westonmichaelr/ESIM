@@ -1,0 +1,88 @@
+/*
+This css is for the LOGIN
+and REGISTRATION page only
+*/
+body {
+  background-color: #87999b;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 4% 0 2% 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  display: block;
+  margin: 0 auto;
+  padding-top: 3%;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Login Table */
+.login_entry {
+  margin: 0 auto;
+}
+
+.login_entry tr {
+  height: 20%;
+  text-align: center;
+}
+
+.login_entry p, .login_entry input {
+  height: 20px;
+  font-size: 20px;
+}
+
+.login_entry button {
+  font-size: 25px;
+}
+
+.register_link {
+  padding-top: 3%;
+}
+
+/* Register Table */
+.register_entry {
+  margin: 0 auto;
+}
+
+.register_entry tr {
+  height: 20%;
+  text-align: center;
+}
+
+.register_entry p, .register_entry input {
+  height: 20px;
+  font-size: 20px;
+}
+
+.register_entry button {
+  font-size: 25px;
+}
+
+.login_link {
+  padding-top: 3%;
+}
+
+/* Link to registration or login page */
+.register_link, .login_link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* ESIM Logo */
+.ESIM_logo {
+  position: fixed;
+  top: -5%;
+  right: 3%;
+  border: 2px solid black;
+  background-color: red;
+  font-size: 50px;
+}
